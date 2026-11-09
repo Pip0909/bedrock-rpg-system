@@ -51,7 +51,7 @@ async function showClassSelect(player) {
   data.attributes = { ...CONFIG.classBases[chosen] };
   saveData(player);
   player.sendMessage(`§aClass: §e${chosen}`);
-  player.sendMessage("§7Type §f!rpg §7for menu");
+  player.sendMessage("§7Type §f/rpg §7for menu");
 }
 
 async function openAttributes(player) {
@@ -177,7 +177,6 @@ async function openEquipList(player) {
   const artId = data.ownedArtifacts[res.selection];
   const art = CONFIG.artifacts[artId];
 
-  // choose slot
   let slots = [];
   if (art.slot === "ring") slots = ["ring1", "ring2"];
   else slots = [art.slot];
