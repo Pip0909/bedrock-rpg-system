@@ -38,8 +38,8 @@ Copy `rpg_bp` into `behavior_packs` and `rpg_rp` into `resource_packs`, then ena
 
 | Command | Action |
 |---------|--------|
-| `!rpg` | Open main menu |
-| `!menu` | Same as `!rpg` |
+| `/rpg` | Open main menu |
+| `/menu` | Same as `/rpg` |
 
 ## Project structure
 
