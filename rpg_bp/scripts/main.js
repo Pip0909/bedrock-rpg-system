@@ -16,7 +16,7 @@ world.afterEvents.playerSpawn.subscribe((ev) => {
   if (!data.classId) {
     system.runTimeout(() => openMainMenu(player), 40);
   } else {
-    player.sendMessage("§7[RPG] Loaded · §f!rpg");
+    player.sendMessage("§7[RPG] Loaded · §f/rpg");
   }
 });
 
@@ -27,7 +27,7 @@ world.afterEvents.playerLeave.subscribe((ev) => {
 // Chat command
 world.beforeEvents.chatSend.subscribe((ev) => {
   const msg = ev.message.trim().toLowerCase();
-  if (msg === "!rpg" || msg === "!menu") {
+  if (msg === "/rpg" || msg === "/menu") {
     ev.cancel = true;
     system.run(() => openMainMenu(ev.sender));
   }
